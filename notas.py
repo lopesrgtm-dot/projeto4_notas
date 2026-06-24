@@ -18,5 +18,9 @@ while True:
 
         if nota < 0 or nota > 10:
             print("Nota inválida!")
-    else:
-        boletim.append(nota)
+        else:
+            boletim.append(nota)
+        
+    elif opcao == 2:
+        print("Calculando média...")
+
