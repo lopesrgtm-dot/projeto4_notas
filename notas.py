@@ -7,7 +7,13 @@ while True:
     
     opcao = int(input(" Digite uma opção: "))
     
-    Faça um `if` para a opção 3: se escolhida, imprima "Saindo..." e dê um `break`.
+
     
     if opcao == 3 :
         print("Saindo...")
+        break       
+    
+    elif opcao == 1:
+        nota = float(input("Digite a nota: "))
+
+
