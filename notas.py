@@ -1,3 +1,4 @@
+
 boletim = []
 
 while True:
@@ -24,3 +25,13 @@ while True:
     elif opcao == 2:
         print("Calculando média...")
 
+    if len(boletim) == 0:
+        print("Nenhuma nota cadastrada ainda")
+            
+    else:
+        media = sum(boletim) / len(boletim)
+        if media >= 7:
+            print(f"Média: {media:.2f} - Situação: Aprovado!")
+        else:
+            print(f"Média: {media:.2f} - Situação: Reprovado!")
+          
