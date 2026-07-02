@@ -1,3 +1,8 @@
+def nota_eh_valida(nota):
+    if nota < 0 or nota > 10:
+        return False
+    return True
+
 
 boletim = []
 
