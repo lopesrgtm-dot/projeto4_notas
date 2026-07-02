@@ -3,6 +3,14 @@ def nota_eh_valida(nota):
         return False
     return True
 
+def calcular_media(lista_de_notas):
+    if len(lista_de_notas) == 0:
+        return 0.0
+
+    media = sum(lista_de_notas) / len(lista_de_notas)
+    return media
+
+
 
 boletim = []
 
