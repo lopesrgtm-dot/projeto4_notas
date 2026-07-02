@@ -30,10 +30,11 @@ while True:
     elif opcao == 1:
         nota = float(input("Digite a nota: "))
 
-        if nota < 0 or nota > 10:
-            print("Nota inválida!")
+        if not nota_eh_valida(nota):
+                print("Nota inválida! Digite entre 0 e 10.")
         else:
-            boletim.append(nota)
+                boletim.append(nota)
+                print("Nota cadastrada.")
         
     elif opcao == 2:
         print("Calculando média...")
